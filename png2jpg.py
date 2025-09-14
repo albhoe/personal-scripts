@@ -1,0 +1,11 @@
+import cv2
+import os
+
+root_dir = "C:\\Users\\alber\\Desktop\\Thespy Archive\\"
+for file in os.listdir(root_dir):
+    if file.endswith(".png"):
+        end = file.index('.')
+        newname = file[0:end] + ".jpg"
+
+        png_img = cv2.imread(os.path.join(root_dir, file))
+        cv2.imwrite(os.path.join(root_dir, newname), png_img, [int(cv2.IMWRITE_JPEG_QUALITY), 100])
