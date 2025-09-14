@@ -1,5 +1,6 @@
 import os
 import re
+#By Albert Hoe
 
 root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why\\usable\\"
 
