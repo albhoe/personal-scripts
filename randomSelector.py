@@ -19,9 +19,11 @@ while not usable:
     img = cv2.imread(os.path.join(root_dir,pick), cv2.IMREAD_COLOR)
     cv2.imshow(pick, img)
     cv2.waitKey(0)
-    i = input("Usable? (y/n):")
+    i = input("Usable? (y/n/q):")
     if i.lower() == 'y':
         usable = True
         os.rename(os.path.join(root_dir,pick), os.path.join(destination_dir,pick))
         os.remove(os.path.join(root_dir,pick))
+    elif i.lower() == 'q':
+        usable = True
     cv2.destroyAllWindows()
