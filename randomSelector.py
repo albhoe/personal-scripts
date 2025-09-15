@@ -1,9 +1,14 @@
 import os
 import cv2
 from random import randrange
+import sys
 
-root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why"
-destination_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why\\usable"
+if len(sys.argv) > 0:
+    root_dir = sys.argv[0]
+else:
+    root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why"
+
+destination_dir = os.path.join(root_dir,"usable")
 
 usable = False
 files = []

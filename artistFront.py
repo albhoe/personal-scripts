@@ -1,8 +1,11 @@
 import os
 import re
-#By Albert Hoe
+import sys
 
-root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why\\usable\\"
+if len(sys.argv) > 0:
+    root_dir = sys.argv[0]
+else:
+    root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why"
 
 files = []
 for f in os.listdir(root_dir):

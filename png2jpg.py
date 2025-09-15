@@ -1,7 +1,12 @@
 import cv2
 import os
+import sys
 
-root_dir = "C:\\Users\\alber\\Desktop\\Thespy Archive\\"
+if len(sys.argv) > 0:
+    root_dir = sys.argv[0]
+else:
+    root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why"
+    
 for file in os.listdir(root_dir):
     if file.endswith(".png"):
         end = file.index('.')
