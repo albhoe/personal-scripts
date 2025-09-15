@@ -9,7 +9,7 @@ usable = False
 files = []
 for f in os.listdir(root_dir):
     file = os.path.join(root_dir,f)
-    if os.path.isfile(file) and not file.startswith('.') and not file.__eq__(__file__):
+    if os.path.isfile(file) and not file.startswith('.') and not file.__eq__(__file__) and (file.endswith('.jpg') or file.endswith('.png') or file.endswith('.jpeg')):
         files.append(f)
 
 while not usable:
