@@ -2,8 +2,10 @@ import cv2
 import os
 import sys
 
-if len(sys.argv) > 0:
-    root_dir = sys.argv[0]
+print(sys.argv)
+if len(sys.argv) > 1:
+    root_dir = sys.argv[1]
+    print(root_dir)
 else:
     root_dir = "C:\\Users\\alber\\Desktop\\D&DCharacters\\Reference Images\\why"
     
