@@ -1,3 +1,4 @@
 ﻿# personal-scripts
 
-These are for Albert Hoe's personal laptop. Files may not be where you think they are if you're somehow reading this.
+These are for Albert Hoe's personal laptop. root_dir may not be correct if you decided to run this on your machine for some reason.
+
